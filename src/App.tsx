@@ -1,11 +1,12 @@
-import { Button } from './components/ui/button'
+import { Button, HStack } from '@chakra-ui/react';
 
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
+    <HStack>
       <Button>Click me</Button>
-    </div>
-  )
+      <Button>Click me</Button>
+    </HStack>
+  );
 }
 
-export default App
+export default App;
