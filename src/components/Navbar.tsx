@@ -17,11 +17,11 @@ function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <Box width={{ base: '100%', md: '14%' }} position="fixed" height="100vh" bg="#EFECE3" boxShadow="md" borderRadius="md">
+    <Box width={{ base: '100%', md: '14%' }} position="fixed" height="100vh" bg="#FFFFFF" boxShadow="md" borderRadius="md">
       <VStack display={{ base: 'none', md: 'block' }} height={'100vh'} align="stretch" p={2} spaceY={2}>
         <Box
           p={4}
-          bg={isActive('/') || isActive('/home') ? '#4A70A9' : '#EFECE3'}
+          bg={isActive('/') || isActive('/home') ? '#4A70A9' : '#FFFFFF'}
           borderRadius="md"
           border={'2px solid #CCCCCC'}
           onClick={() => handleNavigation('/home')}
@@ -32,7 +32,7 @@ function Navbar() {
         </Box>
         <Box
           p={4}
-          bg={isActive('/orders') ? '#4A70A9' : '#EFECE3'}
+          bg={isActive('/orders') ? '#4A70A9' : '#FFFFFF'}
           borderRadius="md"
           border={'2px solid #CCCCCC'}
           onClick={() => handleNavigation('/orders')}
@@ -52,10 +52,10 @@ function Navbar() {
           </Box>
         </Flex>
         {isShowSidebar && (
-          <Box>
+          <Box spaceY={2}>
             <Box
               p={4}
-              bg={isActive('/') || isActive('/home') ? '#4A70A9' : '#EFECE3'}
+              bg={isActive('/') || isActive('/home') ? '#4A70A9' : '#FFFFFF'}
               borderRadius="md"
               border={'2px solid #CCCCCC'}
               onClick={() => handleNavigation('/home')}
@@ -66,7 +66,7 @@ function Navbar() {
             </Box>
             <Box
               p={4}
-              bg={isActive('/orders') ? '#4A70A9' : '#EFECE3'}
+              bg={isActive('/orders') ? '#4A70A9' : '#FFFFFF'}
               borderRadius="md"
               border={'2px solid #CCCCCC'}
               onClick={() => handleNavigation('/orders')}
