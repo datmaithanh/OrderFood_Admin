@@ -7,7 +7,7 @@ function App() {
   return (
     <Box>
       <Navbar />
-      <Box width={{ base: '100%', md: '86%' }} marginLeft={{ base: '0', md: '14%' }} p={4}>
+      <Box bg="#EFECE3" width={{ base: '100%', md: '86%' }} marginLeft={{ base: '0', md: '14%' }} p={2} minHeight="100vh" borderRadius={'md'}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
